@@ -210,7 +210,12 @@ section h1{
 .s2content{
     display: -ms-grid;
     display: grid;
-    place-content: center;
+    place-content: space-evenly;
+    height: 80%;
+}
+.s2 h1{
+    max-width: 100%;
+    margin: 0 auto;
 }
 .s3{
     background-color: #C1605C;
@@ -484,19 +489,14 @@ section h1{
 }
 .whitecolor{
     color: #F8F8F2;
-    font-size: 2.5rem;
-}
-
-.line2,
-.line3{
-    margin-left: 10%;
+    font-size: 2rem;
 }
 
 .line{
     position: relative;
     font-family: 'Source Code Pro', monospace;
-    font-size: 2rem;
-    letter-spacing: .15em;
+    font-size: 1.5rem;
+    line-height: 2rem;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
@@ -516,50 +516,110 @@ section h1{
 
 .line1::before{
     background-color: #272822;
-    -webkit-animation: typewriter1 3s steps(36) forwards;
-            animation: typewriter1 3s steps(36) forwards;
+    -webkit-animation: typewriter1 2s steps(20) forwards;
+            animation: typewriter1 2s steps(20) forwards;
 }
 .line1::after{
     width: .05em;
     background-color: #F8F8F2;
-    -webkit-animation: typewriter1 3s steps(36) forwards,
-    blink 350ms steps(37) infinite;
-            animation: typewriter1 3s steps(36) forwards,
-    blink 350ms steps(37) infinite;
+    -webkit-animation: typewriter1 2s steps(20) forwards,
+    blink 350ms steps(20) infinite;
+            animation: typewriter1 2s steps(20) forwards,
+    blink 350ms steps(20) infinite;
 }
 
 /* second Paragraph line */
 
 .line2::before{
     background-color: #272822;
-    -webkit-animation: typewriter2 3s steps(36) 3s forwards;
-            animation: typewriter2 3s steps(36) 3s forwards;
+    -webkit-animation: typewriter2 2s steps(20) 2s forwards;
+            animation: typewriter2 2s steps(20) 2s forwards;
 }
 .line2::after{
     opacity: 0;
     width: .05em;
     background-color: #F8F8F2;
-    -webkit-animation: typewriter2 3s steps(36) 3s forwards,
-    blink 350ms steps(36) infinite;
-            animation: typewriter2 3s steps(36) 3s forwards,
-    blink 350ms steps(36) infinite;
+    -webkit-animation: typewriter2 2s steps(20) 2s forwards,
+    blink 350ms steps(20) infinite;
+            animation: typewriter2 2s steps(20) 2s forwards,
+    blink 350ms steps(20) infinite;
 }
 
 /* third Paragraph line */
 
 .line3::before{
     background-color: #272822;
-    -webkit-animation: typewriter3 .2s steps(3) 6s forwards;
-            animation: typewriter3 .2s steps(3) 6s forwards;
+    -webkit-animation: typewriter2 2s steps(19) 4s forwards;
+            animation: typewriter2 2s steps(19) 4s forwards;
 }
 .line3::after{
     opacity: 0;
     width: .05em;
     background-color: #F8F8F2;
-    -webkit-animation: typewriter3 .2s steps(3) 6s forwards,
-    blink 350ms steps(3) infinite;
-            animation: typewriter3 .2s steps(3) 6s forwards,
-    blink 350ms steps(3) infinite;
+    -webkit-animation: typewriter2 2s steps(19) 4s forwards,
+    blink 350ms steps(19) infinite;
+            animation: typewriter2 2s steps(19) 4s forwards,
+    blink 350ms steps(19) infinite;
+}
+
+.line4::before{
+    background-color: #272822;
+    -webkit-animation: typewriter2 3s steps(23)9s forwards;
+            animation: typewriter2 3s steps(23) 6s forwards;
+}
+.line4::after{
+    opacity: 0;
+    width: .05em;
+    background-color: #F8F8F2;
+    -webkit-animation: typewriter2 3s steps(23) 6s forwards,
+    blink 350ms steps(23) infinite;
+            animation: typewriter2 3s steps(23) 6s forwards,
+    blink 350ms steps(23) infinite;
+}
+
+.line5::before{
+    background-color: #272822;
+    -webkit-animation: typewriter2 2s steps(16) 9s forwards;
+            animation: typewriter2 2s steps(16) 9s forwards;
+}
+.line5::after{
+    opacity: 0;
+    width: .05em;
+    background-color: #F8F8F2;
+    -webkit-animation: typewriter2 2s steps(16) 9s forwards,
+    blink 350ms steps(16) infinite;
+            animation: typewriter2 2s steps(16) 9s forwards,
+    blink 350ms steps(16) infinite;
+}
+
+.line6::before{
+    background-color: #272822;
+    -webkit-animation: typewriter2 3s steps(24) 11s forwards;
+            animation: typewriter2 3s steps(24) 11s forwards;
+}
+.line6::after{
+    opacity: 0;
+    width: .05em;
+    background-color: #F8F8F2;
+    -webkit-animation: typewriter2 3s steps(24) 11s forwards,
+    blink 350ms steps(24) infinite;
+            animation: typewriter2 3s steps(24) 11s forwards,
+    blink 350ms steps(24) infinite;
+}
+
+.line7::before{
+    background-color: #272822;
+    -webkit-animation: typewriter3 .5s steps(4) 14s forwards;
+            animation: typewriter3 .5s steps(4) 14s forwards;
+}
+.line7::after{
+    opacity: 0;
+    width: .05em;
+    background-color: #F8F8F2;
+    -webkit-animation: typewriter3 .5s steps(5) 14s forwards,
+    blink 350ms steps(5) infinite;
+            animation: typewriter3 .5s steps(5) 14s forwards,
+    blink 350ms steps(5) infinite;
 }
 
 @-webkit-keyframes typewriter1{
@@ -606,6 +666,9 @@ section h1{
     }
 }
 
+.tech-text{
+    margin: 0 auto;
+}
 /* Logo */
 
 /* SECTION 3 */
@@ -700,9 +763,11 @@ section h1{
         margin: 0;
     }
     
-    .s1 h1{
+    .s1 h1,
+    .s2 h1{
         width: 90%;
     }
+
 
     .card{
         position: relative;
@@ -791,20 +856,15 @@ section h1{
 
     /* section 2 */
 
-    .line2,
-    .line3{
-        margin-left: 15%;
-    }
-
     .whitecolor{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .line{
         position: relative;
         font-family: 'Source Code Pro', monospace;
-        font-size: 2rem;
-        letter-spacing: 0em;
+        font-size: 1.5rem;
+        line-height: 2rem;
         width: -webkit-max-content;
         width: -moz-max-content;
         width: max-content;
@@ -932,20 +992,16 @@ section h1{
 
     /* section 2 */
 
-    .line2,
-    .line3{
-        margin-left: 15%;
-    }
 
     .whitecolor{
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 
     .line{
         position: relative;
         font-family: 'Source Code Pro', monospace;
-        font-size: 2rem;
-        letter-spacing: 0em;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
         width: -webkit-max-content;
         width: -moz-max-content;
         width: max-content;
@@ -1073,19 +1129,11 @@ section h1{
 
     /* section 2 */
 
-    .line2,
-    .line3{
-        margin-left: 0%;
-    }
-
-    .whitecolor{
-        font-size: 2rem;
-    }
 
     .line{
         position: relative;
         font-family: 'Source Code Pro', monospace;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         letter-spacing: 0em;
         width: -webkit-max-content;
         width: -moz-max-content;
@@ -1262,14 +1310,6 @@ section h1{
 
     /* section 2 */
 
-    .line2,
-    .line3{
-        margin-left: 0%;
-    }
-
-    .whitecolor{
-        font-size: 1.3rem;
-    }
 
     .line{
         position: relative;
@@ -1415,19 +1455,14 @@ section h1{
 
     /* section 2 */
 
-    .line2,
-    .line3{
-        margin-left: 0%;
-    }
-
     .whitecolor{
-        font-size: .9rem;
+        font-size: 1.5rem;
     }
 
     .line{
         position: relative;
         font-family: 'Source Code Pro', monospace;
-        font-size: .9rem;
+        font-size: 1.2rem;
         letter-spacing: 0em;
         width: -webkit-max-content;
         width: -moz-max-content;
