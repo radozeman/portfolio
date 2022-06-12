@@ -1108,11 +1108,6 @@ section h1{
 }
 
 @media screen and (max-width: 768px) {
-    .dots{
-        bottom: 8%;
-        left: 50%;
-
-    }
     .mobilenav{
         display: initial;
         position: fixed;
@@ -1309,11 +1304,17 @@ section h1{
         text-align: center;
         margin: 0;
     }
+
+    .dots{
+        bottom: 5%;
+        left: 50%;
+
+    }
     
     .s1 h1{
         width: 90%;
         margin-top: 15px;
-        margin-bottom: -80px;
+        margin-bottom: -60px;
     }
 
     .card{
