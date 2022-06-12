@@ -1109,7 +1109,7 @@ section h1{
 
 @media screen and (max-width: 768px) {
     .dots{
-        bottom: 5%;
+        bottom: 8%;
         left: 50%;
 
     }
@@ -1312,7 +1312,7 @@ section h1{
     
     .s1 h1{
         width: 90%;
-        margin-top: 25px;
+        margin-top: 15px;
         margin-bottom: -80px;
     }
 
