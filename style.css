@@ -1306,14 +1306,13 @@ section h1{
     }
 
     .dots{
-        bottom: 5%;
+        bottom: 15%;
         left: 50%;
 
     }
     
     .s1 h1{
         width: 90%;
-        margin-top: 15px;
     }
 
     .card{
