@@ -5,13 +5,6 @@
 * Browsers: last 4 version
 */
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.12,
-* Autoprefixer: v10.4.4
-* Browsers: last 4 version
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
 html {
@@ -86,8 +79,8 @@ nav ul li a{
     z-index: 55;
 }
 
-nav ul li p:hover:active,
-nav ul li a:hover:active{
+nav ul li p:hover,
+nav ul li a:hover{
     letter-spacing: 0.25rem;
 }
 nav ul li p:after,
@@ -103,8 +96,8 @@ nav ul li a:after{
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-nav ul li p:hover:active:after,
-nav ul li a:hover:active:after{
+nav ul li p:hover:after,
+nav ul li a:hover:after{
     width: 100%;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -369,10 +362,10 @@ section h1{
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-.card1:hover:active::before,
-.card1:hover:active::after,
-.card2:hover:active::before,
-.card2:hover:active::after
+.card1:hover::before,
+.card1:hover::after,
+.card2:hover::before,
+.card2:hover::after
 {
     -webkit-transform: skewX(0deg);
         -ms-transform: skewX(0deg);
@@ -380,7 +373,6 @@ section h1{
     left: 14%;
     width: calc(100% - 90px);
 }
-
 .card1::before,
 .card1::after{
     background: -o-linear-gradient(135deg,#ffbc00,#ff0058);
@@ -430,7 +422,7 @@ section h1{
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
-.card:hover:active span::before{
+.card:hover span::before{
     top: -6%;
     left: 5%;
     width:75px;
@@ -455,14 +447,13 @@ section h1{
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
-.card:hover:active span::after{
+.card:hover span::after{
     bottom: -6%;
     right: 5%;
     width: 75px;
     height: 75px;
     opacity: 1;
 }
-
 .content h2{
     margin-bottom: 5px;
 }
@@ -479,7 +470,7 @@ section h1{
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-.content a:hover:active{
+.content a:hover{
     color: black;
     background-color: #fff;
     border: 1px solid #fff;
@@ -755,33 +746,7 @@ section h1{
     }
 }
 
-@media (hover: none){
-    .card span::before{
-        top: -6%;
-        left: 5%;
-        width:75px;
-        height: 75px;
-        opacity: 1;
-    }
-    .card span::after{
-        bottom: -6%;
-        right: 5%;
-        width: 75px;
-        height: 75px;
-        opacity: 1;
-    }
-    .card1::before,
-    .card1::after,
-    .card2::before,
-    .card2::after{
-        -webkit-transform: skewX(0deg);
-        -ms-transform: skewX(0deg);
-            transform: skewX(0deg);
-        left: 14%;
-        width: calc(100% - 90px);
-    }
 
-}
 
 @media screen and (max-width: 1500px){
     .mobilenav{
@@ -844,14 +809,14 @@ section h1{
         width: 50%;
     }
 
-    .card:hover:active span::before{
+    .card:hover span::before{
         top: -7%;
         left: 5%;
         width: 65px;
         height: 65px;
         opacity: 1;
     }
-    .card:hover:active span::after{
+    .card:hover span::after{
         bottom: -7%;
         right: 4%;
         width: 65px;
@@ -980,14 +945,14 @@ section h1{
         width: 50%;
     }
 
-    .card:hover:active span::before{
+    .card:hover span::before{
         top: -7%;
         left: 5%;
         width: 65px;
         height: 65px;
         opacity: 1;
     }
-    .card:hover:active span::after{
+    .card:hover span::after{
         bottom: -7%;
         right: 4%;
         width: 65px;
@@ -1117,14 +1082,14 @@ section h1{
         width: 50%;
     }
 
-    .card:hover:active span::before{
+    .card:hover span::before{
         top: -7%;
         left: 5%;
         width: 65px;
         height: 65px;
         opacity: 1;
     }
-    .card:hover:active span::after{
+    .card:hover span::after{
         bottom: -7%;
         right: 4%;
         width: 65px;
@@ -1192,6 +1157,33 @@ section h1{
 }
 
 @media screen and (max-width: 768px) {
+    @media (hover: none){
+        .card span::before{
+            top: -7%;
+            left: 7%;
+            width: 55px;
+            height: 55px;
+            opacity: 1;
+        }
+        .card span::after{
+            bottom: -7%;
+            right: 6%;
+            width: 55px;
+            height: 55px;
+            opacity: 1;
+        }
+        .card1::before,
+        .card1::after,
+        .card2::before,
+        .card2::after{
+            -webkit-transform: skewX(0deg);
+            -ms-transform: skewX(0deg);
+                transform: skewX(0deg);
+            left: 16%;
+            width: calc(100% - 90px);
+        }
+    }
+    
     .mobilenav{
         display: initial;
         position: fixed;
@@ -1297,15 +1289,14 @@ section h1{
         padding: 5px 0;
         width: 50%;
     }
-
-    .card:hover:active span::before{
+    .card:hover span::before{
         top: -6%;
         left: 5%;
         width: 55px;
         height: 55px;
         opacity: 1;
     }
-    .card:hover:active span::after{
+    .card:hover span::after{
         bottom: -6%;
         right: 8%;
         width: 55px;
@@ -1376,16 +1367,37 @@ section h1{
 }
 
 @media screen and (max-width: 480px) {
+    @media (hover: none){
+        .card span::before{
+            top: -6%;
+            left: 10%;
+            width: 40px;
+            height: 40px;
+            opacity: 1;
+        }
+        .card span::after{
+            bottom: -6%;
+            right: 11%;
+            width: 40px;
+            height: 40px;
+            opacity: 1;
+        }
+        .card1::before,
+        .card1::after,
+        .card2::before,
+        .card2::after{
+            -webkit-transform: skewX(0deg);
+            -ms-transform: skewX(0deg);
+                transform: skewX(0deg);
+            left: 18%;
+            width: calc(100% - 90px);
+        }
+    
+    }
     .hidden{
         display: none;
     }
 
-    .card1:hover:active::before,
-    .card1:hover:active::after,
-    .card2:hover:active::before,
-    .card2:hover:active::after{
-    left: 18%;
-    }
 
     section h1{
         letter-spacing: 0rem;
@@ -1443,14 +1455,14 @@ section h1{
         width: 50%;
     }
 
-    .card:hover:active span::before{
+    .card:hover span::before{
         top: -6%;
         left: 10%;
         width: 40px;
         height: 40px;
         opacity: 1;
     }
-    .card:hover:active span::after{
+    .card:hover span::after{
         bottom: -6%;
         right: 11%;
         width: 40px;
