@@ -32,7 +32,7 @@ main::-webkit-scrollbar {
 nav{
     width: 100%;
     position: fixed;
-    top: 15px;
+    top: 20px;
     background-color: transparent;
     z-index: 40;
     padding-right: 5rem;
@@ -721,7 +721,7 @@ left: 4%;
 #logo-path{
     stroke-dasharray: 507.5;
     stroke-dashoffset: 507.5;
-    animation: sign 6s ease .5s forwards;
+    animation: sign 3s ease .5s forwards;
 }
 @keyframes sign{
     to {
