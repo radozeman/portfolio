@@ -721,7 +721,7 @@ left: 4%;
 #logo-path{
     stroke-dasharray: 507.5;
     stroke-dashoffset: 507.5;
-    animation: sign 6s ease forwards;
+    animation: sign 6s ease .5s forwards;
 }
 @keyframes sign{
     to {
