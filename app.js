@@ -60,10 +60,10 @@
     let currentCard = 0;
 
     document.getElementById("nextbtn").addEventListener("click", () => {
-        changeSlide(currentCard + 1);
+        changeSlide(currentCard + 1),changeColors();
     });
     document.getElementById("prevbtn").addEventListener("click", () => {
-        changeSlide(currentCard - 1);
+        changeSlide(currentCard - 1),changeColors();
     });
 
     function changeSlide(moveTo) {
@@ -78,13 +78,30 @@
         currentCard = moveTo;
     }
 
-    document.querySelectorAll('.dot').forEach((dot, dotIndex) => {
+    document.querySelectorAll('.dot').forEach((dot, index) => {
         dot.addEventListener('click', () => {
-            if (currentCard !== dotIndex) {
-                changeSlide(dotIndex);
-            }
+            if (currentCard !== index) {
+                changeSlide(index);
+            };
         });
     });
+
+    // set dot colors
+    
+    changeColors = () => {
+        document.querySelectorAll('.dot').forEach((dot, index) =>{
+            if (dot.classList.contains('active') && index === 0){
+                dot.setAttribute('style', 'background:linear-gradient(315deg,#ffbc00,#ff0058);');
+            } else if (!dot.classList.contains('active') && index === 0) {
+                dot.removeAttribute('style');
+            } else if (dot.classList.contains('active') && index === 1) {
+                dot.setAttribute('style', 'background:linear-gradient(315deg,#03a9f4,#ff0058);');
+            } else if (!dot.classList.contains('active') && index === 1) {
+                dot.removeAttribute('style');
+            };
+        });
+    };
+    
 
     // Mobile nav
     openCloseMenu = () => {

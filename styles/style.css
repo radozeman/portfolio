@@ -287,20 +287,18 @@ section h1{
 }
 
 .dot{
-    height: 12px;
-    width: 12px;
+    height: 14px;
+    width: 14px;
     border-radius: 50%;
-    border: 2px #fff solid;
-    background-color: black;
+    background-color: white;
     margin: 0 15px 0 15px;
     cursor: pointer;
     padding: 5px;
 }
 
-.dot.active{
-    border: 2px solid #fff;
+/* .dot.active{
     background-color: #fff;
-}
+} */
 
 .card1,
 .card2{
