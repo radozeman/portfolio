@@ -715,6 +715,7 @@ position: fixed;
 top: 2%;
 z-index: 400;
 left: 4%;
+cursor: pointer;
 }
 #logo-path{
     stroke-dasharray: 507.5;
