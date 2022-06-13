@@ -13,13 +13,13 @@
 
     document.addEventListener('click', (e) => {
         if(e.target.classList.value === 'projects'){
-            document.querySelector('#projects').scrollIntoView({behavior:"smooth"});
+            document.querySelector('#projects').scrollIntoView({behavior:'smooth'});
         } else if (e.target.classList.value === 'logo'){
-            document.querySelector('#projects').scrollIntoView({behavior:"smooth"});
+            document.querySelector('#projects').scrollIntoView({behavior:'smooth'});
         } else if (e.target.classList.value === 'technologies'){
-            document.querySelector('#technologies').scrollIntoView({behavior:"smooth"});
+            document.querySelector('#technologies').scrollIntoView({behavior:'smooth'});
         } else if (e.target.classList.value === 'about'){
-            document.querySelector('#about').scrollIntoView({behavior:"smooth"});
+            document.querySelector('#about').scrollIntoView({behavior:'smooth'});
         };
     });
 
@@ -57,14 +57,14 @@
 
     // slide cards 
 
-    let cards = document.getElementsByClassName("card-container");
-    let dotss = document.getElementsByClassName("dot");
+    let cards = document.getElementsByClassName('card-container');
+    let dotss = document.getElementsByClassName('dot');
     let currentCard = 0;
 
-    document.getElementById("nextbtn").addEventListener("click", () => {
+    document.getElementById('nextbtn').addEventListener('click', () => {
         changeSlide(currentCard + 1),changeColors();
     });
-    document.getElementById("prevbtn").addEventListener("click", () => {
+    document.getElementById('prevbtn').addEventListener('click', () => {
         changeSlide(currentCard - 1),changeColors();
     });
 
@@ -72,10 +72,10 @@
         if (moveTo >= cards.length) {moveTo = 0;};
         if (moveTo < 0) {moveTo = cards.length - 1;};
 
-        cards[currentCard].classList.toggle("active");
-        dotss[currentCard].classList.toggle("active");
-        cards[moveTo].classList.toggle("active");
-        dotss[moveTo].classList.toggle("active");
+        cards[currentCard].classList.toggle('active');
+        dotss[currentCard].classList.toggle('active');
+        cards[moveTo].classList.toggle('active');
+        dotss[moveTo].classList.toggle('active');
 
         currentCard = moveTo;
     }
