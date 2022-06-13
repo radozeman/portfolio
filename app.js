@@ -12,7 +12,9 @@
     // Link nav section with page section
 
     document.addEventListener('click', (e) => {
-        if(e.target.classList.value === 'projects' || e.target.classList.value === 'logo'){
+        if(e.target.classList.value === 'projects'){
+            document.querySelector('#projects').scrollIntoView({behavior:"smooth"});
+        } else if (e.target.classList.value === 'logo'){
             document.querySelector('#projects').scrollIntoView({behavior:"smooth"});
         } else if (e.target.classList.value === 'technologies'){
             document.querySelector('#technologies').scrollIntoView({behavior:"smooth"});
