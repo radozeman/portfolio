@@ -1,3 +1,14 @@
+    // close CV
+    const closeBtn = document.querySelector('.closecv');
+    const resume = document.querySelector('article');
+    closeBtn.addEventListener('click', () => {
+        resume.classList.toggle('hidden');
+    });
+    const cvLink = document.querySelector('.resume');
+    cvLink.addEventListener('click', () => {
+        resume.classList.toggle('hidden');
+    });
+    
     // Link nav section with page section
 
     document.addEventListener('click', (e) => {
