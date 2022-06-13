@@ -857,6 +857,7 @@ header h1{
     width: 100vw;
     height: 100vh;
     background-color: black;
+    color: white;
 }
 
 @media screen and (max-width: 1500px){
@@ -1281,7 +1282,9 @@ header h1{
       display: none;
     }
     #turn{
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
   }
 
