@@ -849,6 +849,15 @@ header h1{
 .bold{
     font-weight: bold;
 }
+#turn{
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 550;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
 
 @media screen and (max-width: 1500px){
     .mobilenav{
@@ -1264,6 +1273,12 @@ header h1{
     
 }
 
+@media only screen and (pointer: coarse) and (min-width: 320px) and (max-width: 1920px) and (orientation: landscape) {
+    body {
+      display: none;
+    }
+  }
+
 @media screen and (max-width: 768px) {
     @media (hover: none){
         .card span::before{
@@ -1652,7 +1667,5 @@ header h1{
         line-height: 1.5rem;
         letter-spacing: .15rem;
         max-width: 95%;
-    }
-
-    
+    }   
 }
