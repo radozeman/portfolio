@@ -40,7 +40,7 @@
                 <p class="line1 line"><span class="bluecolor">let</span><span class="whitecolor"> MyTechStack </span><span class="redcolor">= </span><span class="yellowcolor">{ </span></p>
                 <p class="line2 line"><span class="yellowcolor">HTML5: </span><span class="yellowcolor">'pokrocily'</span><span class="redcolor">, </span></p>
                 <p class="line3 line"><span class="yellowcolor">CSS3: </span><span class="yellowcolor">'pokrocily'</span><span class="redcolor">, </span></p>
-                <p class="line4 line"><span class="yellowcolor">Javascript: </span><span class="yellowcolor">'zaklady'</span><span class="redcolor">, </span></p>
+                <p class="line4 line"><span class="yellowcolor">JavaScript: </span><span class="yellowcolor">'zaklady'</span><span class="redcolor">, </span></p>
                 <p class="line5 line"><span class="yellowcolor">Git: </span><span class="yellowcolor">'zaklady'</span><span class="redcolor">, </span></p>
                 <p class="line6 line"><span class="yellowcolor">TailwindCSS: </span><span class="yellowcolor">'zaklady'</span><span class="redcolor">, </span></p>
                 <p class="line7 line"><span class="yellowcolor">}</span>;  </p>
