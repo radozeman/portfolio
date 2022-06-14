@@ -931,36 +931,6 @@ header h1{
         opacity: 1;
     }
 
-    .cardbtns{
-        position: absolute;
-        height: 5%;
-        width: 5%;
-        cursor: pointer;
-        opacity: 1;
-    }
-    
-    #prevbtn {
-        top: 50%;
-        left: 20%;
-        -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-                transform: translateY(-50%);
-    
-    }
-    
-    #nextbtn {
-        top: 50%;
-        right: 20%;
-        -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-                transform: translateY(-50%);
-    }
-
-    .dot{
-        height: 10px;
-        width: 10px;
-        padding: 0px;
-    }
 
     /* section 2 */
 
@@ -1068,37 +1038,6 @@ header h1{
         width: 65px;
         height: 65px;
         opacity: 1;
-    }
-
-    .cardbtns{
-        position: absolute;
-        height: 5%;
-        width: 5%;
-        cursor: pointer;
-        opacity: 1;
-    }
-    
-    #prevbtn {
-        top: 50%;
-        left: 10%;
-        -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-                transform: translateY(-50%);
-    
-    }
-    
-    #nextbtn {
-        top: 50%;
-        right: 10%;
-        -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-                transform: translateY(-50%);
-    }
-
-    .dot{
-        height: 10px;
-        width: 10px;
-        padding: 0px;
     }
 
     /* section 2 */
@@ -1210,36 +1149,6 @@ header h1{
         opacity: 1;
     }
 
-    .cardbtns{
-        position: absolute;
-        height: 5%;
-        width: 5%;
-        cursor: pointer;
-        opacity: 1;
-    }
-    
-    #prevbtn {
-        top: 50%;
-        left: 10%;
-        -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-                transform: translateY(-50%);
-    
-    }
-    
-    #nextbtn {
-        top: 50%;
-        right: 10%;
-        -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-                transform: translateY(-50%);
-    }
-
-    .dot{
-        height: 10px;
-        width: 10px;
-        padding: 0px;
-    }
 
     /* section 2 */
 
@@ -1302,7 +1211,9 @@ header h1{
         .card1::before,
         .card1::after,
         .card2::before,
-        .card2::after{
+        .card2::after,
+        .card3::before,
+        .card3::after{
             -webkit-transform: skewX(0deg);
             -ms-transform: skewX(0deg);
                 transform: skewX(0deg);
@@ -1319,11 +1230,6 @@ header h1{
         right: 0;
     }
 
-    .dots{
-        bottom: 15%;
-        left: 50%;
-
-    }
 
     nav{
         width: 100%;
@@ -1431,37 +1337,8 @@ header h1{
         opacity: 1;
     }
 
-    .cardbtns{
-        position: absolute;
-        height: 5%;
-        width: 5%;
-        cursor: pointer;
-        opacity: 1;
-    }
     
-    #prevbtn {
-        top: 50%;
-        left: 10%;
-        -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-                transform: translateY(-50%);
     
-    }
-    
-    #nextbtn {
-        top: 50%;
-        right: 10%;
-        -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-                transform: translateY(-50%);
-    }
-
-    .dot{
-        height: 10px;
-        width: 10px;
-        padding: 0px;
-    }
-
     /* section 2 */
 
 
@@ -1512,7 +1389,9 @@ header h1{
         .card1::before,
         .card1::after,
         .card2::before,
-        .card2::after{
+        .card2::after,
+        .card3::before,
+        .card3::after{
             -webkit-transform: skewX(0deg);
             -ms-transform: skewX(0deg);
                 transform: skewX(0deg);
@@ -1546,11 +1425,6 @@ header h1{
         margin: 0;
     }
 
-    .dots{
-        bottom: 15%;
-        left: 50%;
-
-    }
     
     .s1 h1{
         width: 90%;
@@ -1618,28 +1492,6 @@ header h1{
         opacity: 1;
     }
     
-    #prevbtn {
-        top: 50%;
-        left: 4%;
-        -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-                transform: translateY(-50%);
-    
-    }
-    
-    #nextbtn {
-        top: 50%;
-        right: 4%;
-        -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-                transform: translateY(-50%);
-    }
-
-    .dot{
-        height: 10px;
-        width: 10px;
-        padding: 0px;
-    }
 
     /* section 2 */
 
