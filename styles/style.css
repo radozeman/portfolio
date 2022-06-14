@@ -16,8 +16,6 @@ html {
 main{
     height: 100vh;
     font-family: 'Sora', sans-serif;
-    -ms-scroll-snap-type: y mandatory;
-        scroll-snap-type: y mandatory;
     overflow-y: scroll;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
@@ -149,8 +147,7 @@ nav ul li a:hover:after{
 /* End of Navigation */
 
 section{
-    height: 100vh;
-    scroll-snap-align: start;
+    min-height: 100vh;
 }
 section h1{
     letter-spacing: 0.05rem;
@@ -164,26 +161,24 @@ section h1{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.s1 h1{
+    margin-bottom: 100px;
 }
 
 .s1content{
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 100%;
     max-width: 1920px;
-    height: 600px;
-    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
+
 
 .s2{
     position: relative;
@@ -212,7 +207,7 @@ section h1{
     margin: 0 auto;
 }
 .s3{
-    background-color: #C1605C;
+    background-color: #824744;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -222,32 +217,17 @@ section h1{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    color: white;
+    color: #fff;
 }
 
 /* Cards */
-
 .card-container{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s;
-    opacity: 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px 100px;
 }
-
 .cardbtns{
     position: absolute;
     height: 8%;
@@ -303,6 +283,7 @@ section h1{
 .card1,
 .card2{
     position: relative;
+    flex-wrap: wrap;
     width: 340px;
     height: 400px;
     display: -webkit-box;
@@ -680,11 +661,11 @@ section h1{
         -ms-flex-align: center;
             align-items: center;
     line-height: 1.5rem;
-    letter-spacing: .15rem;
 }
 .s3content p{
-    max-width: 70%;
+    max-width: 65ch;
     text-align: center;
+    font-size: 1.2rem;
 }
 
 .s3content h1{
@@ -897,6 +878,7 @@ header h1{
         -webkit-transition: 0.5s;
         -o-transition: 0.5s;
         transition: 0.5s;
+        gap: 0;
     }
 
     .content{
